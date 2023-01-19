@@ -126,6 +126,12 @@ module.exports = {
 
 ### [2. Arrow functions](./2-arrow.js)
 
+### [3. Parameter defaults](./3-default-parameter.js)
+
+### [4. Rest parameter syntax for functions](./4-rest-parameter.js)
+
+### [5. The wonders of spread syntax](./5-spread-operator.js)
+
 ## Author
 
 - **Joseph Mahiuha** (@diegozencode) - [<img src="https://img.shields.io/badge/Portfolio-20d6fe.svg?&style=plastic"/>](https://mahiuha.github.io/josephmahiuha/)
