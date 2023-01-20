@@ -12,6 +12,6 @@ const report = createReportObject(employees);
 
 const reportWithIterator = createIteratorObject(report);
 
-for (const item of reportWithIterator) {
+for (const item of Object.keys(reportWithIterator)) {
   console.log(item);
 }
