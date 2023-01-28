@@ -1,9 +1,5 @@
-export default function cleanSet(s, startString) {
-  let result = '';
-  for (const item of s) {
-    if (item.startsWith(startString)) {
-      result += `${item.slice(startString.length)}-`;
-    }
-  }
-  return result.slice(0, -1);
+export default function cleanSet(set, startString) {
+  const filteredSet = Array.from(set).filter((val) => val.startsWith(startString));
+  const cleanedValues = filteredSet.map((val) => val.substring(startString.length));
+  return cleanedValues.join('-');
 }
