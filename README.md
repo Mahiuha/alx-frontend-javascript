@@ -16,6 +16,7 @@
 * Advanced JQuery
 * Cookies & Local Storage
 * ES6
+* TypeScript
 * Webpack
 * Building Portfolio Applications
 
