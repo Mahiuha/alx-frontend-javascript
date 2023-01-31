@@ -13,32 +13,31 @@ interface Teacher {
   [key: string]: any;
 }
 
-// initialize the first teacher object
-const teacher1: Teacher = {
+// extend the Teacher interface to create a new interface Directors
+interface Directors extends Teacher {
+  // number of reports the director manages
+  numberOfReports: number;
+}
+
+// initialize the first director object
+const director1: Directors = {
   firstName: "John",
   lastName: "Doe",
   fullTimeEmployee: true,
   yearsOfExperience: 5,
-  location: "New York"
+  location: "New York",
+  numberOfReports: 10
 };
 
-// initialize the second teacher object
-const teacher2: Teacher = {
+// initialize the second director object
+const director2: Directors = {
   firstName: "Jane",
   lastName: "Doe",
   fullTimeEmployee: false,
-  location: "London"
-};
-
-// initialize the third teacher object
-const teacher3: Teacher = {
-  firstName: "John",
-  lastName: "Doe",
-  fullTimeEmployee: false,
   location: "London",
-  contract: false
+  numberOfReports: 20
 };
 
-// print the third teacher object
-console.log(teacher3);
+// print the second director object
+console.log(director2);
 
